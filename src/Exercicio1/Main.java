@@ -12,27 +12,27 @@ public class Main {
         double resposta= entrada.nextDouble();
 
         for (int i=0;i<resposta;i++){
+            double resposta1;
             System.out.println("Se seu cartão for credito digite 1 / Se seu catão for debito digite 2: ");
-            resposta=entrada.nextDouble();
+            resposta1=entrada.nextDouble();
 
-
-            if(resposta==1){
+            if(resposta1==1){
                 System.out.println("Qual valor deseja depositar: ");
-                resposta=entrada.nextDouble();
+                resposta1=entrada.nextDouble();
 
-                caixa.setSaldo(caixa.getSaldo()+resposta);
+                caixa.setSaldo(caixa.getSaldo()+resposta1);
                 System.out.println(caixa.getSaldo());
 
             }
-            else if (resposta==2){
+            else if (resposta1==2) {
                 System.out.println("Qual valor deseja sacar: ");
-                resposta=entrada.nextDouble();
+                resposta1 = entrada.nextDouble();
 
-                caixa.setSaldo(caixa.getSaldo()-resposta);
+                caixa.setSaldo(caixa.getSaldo() - resposta1);
                 System.out.println(caixa.getSaldo());
             }
             else {
-                System.out.println("Opção invalida!");
+                System.out.println("Opção inválida");
             }
         }
     }
